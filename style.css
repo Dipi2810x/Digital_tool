@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(206,222,228,0.945);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+
+p {
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+  }
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#start8th {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+

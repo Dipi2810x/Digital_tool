@@ -2,28 +2,22 @@
 <html>
 <head>
 <title>Digital Timer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>Digital timer</h1>
 <p>To help tearchers monitor leaners</p>
-<style>
-    
-body {
-    background-color: rgba(206, 222, 228, 0.945);
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-    font-size: 100px;
-  }
-  
-  p {
-    text-align: center;
-    font-family: verdana;
-    font-size: 20px;
-  }</style>
+
+<div class="center-box">
+    <button id="startBtn">start</button>
+</div>
+
+<script>
+    document.getElementById('startBtn').onclick = function() {
+        window.location.href = 'login.html';
+    };
+</script>
 
 </body>
 </html>

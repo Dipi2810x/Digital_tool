@@ -7,7 +7,36 @@
 <body>
 
 <h1>Login Page</h1>
-<p>Itsa working</p>
+
+<div class="container" id="login-container">
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <button onclick="login()">Login</button>
+</div>
+
+<script>
+    let loggedIn = false;
+    let stopwatchInterval;
+    let elapsedTime = 0; // in seconds
+
+    // Function to handle login
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // For demo purposes, any login will succeed
+        if (username && password) {
+            loggedIn = true;
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('stopwatch-container').style.display = 'block';
+            elapsedTime = 0; // Reset stopwatch when logged in
+            updateTimeDisplay();
+        } else {
+            alert("Please enter both username and password.");
+        }
+    }
+</script>
 
 
 </body>
